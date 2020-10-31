@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
-<body>
+  <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="w3.css">
+    <head>
+	<body>
 
-<!-- Navigation -->
-<nav class="w3-bar w3-black">
-  <a href="#home" class="w3-button w3-bar-item">Home</a>
-  <a href="#projects" class="w3-button w3-bar-item">Projects</a>
-  <a href="#publication" class="w3-button w3-bar-item">Publication</a>
-  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
-</nav>
+		<!-- Navigation -->
+		<nav class="w3-bar w3-black">
+		  <a href="#home" class="w3-button w3-bar-item">Home</a>
+		  <a href="#projects" class="w3-button w3-bar-item">Projects</a>
+		  <a href="#publication" class="w3-button w3-bar-item">Publication</a>
+		  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+		</nav>
 
-<!-- Slide Show -->
-<section>
-  <img class="mySlides" src="DJI_0010.jpg" style="width:100%">
-  <img class="mySlides" src="DJI_0223.jpg" style="width:100%">
-  <img class="mySlides" src="Koala_Joe.jpg" style="width:100%">
-</section>
+		<!-- Slide Show -->
+		<section>
+		  <img class="mySlides" src="DJI_0010.jpg" style="width:100%">
+		  <img class="mySlides" src="DJI_0223.jpg" style="width:100%">
+		  <img class="mySlides" src="Koala_Joe.jpg" style="width:100%">
+		</section>
 
-<script>
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
+		<script>
+		// Automatic Slideshow - change image every 3 seconds
+		var myIndex = 0;
+		carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 3000);
-}
-</script>
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}
+		  x[myIndex-1].style.display = "block";
+		  setTimeout(carousel, 3000);
+		}
+		</script>
 
-</body>
+	</body>
 </html>
